@@ -18,7 +18,7 @@ const ContactForm = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (contactElement) observer.observe(contactElement);
@@ -48,7 +48,7 @@ const ContactForm = () => {
               <p className="Moda">West Yorkshire</p>
               <p className="Moda">BD6 3ND</p>
               <p className="contact-phone">
-                <span className="Moda">TEL: 01274 576 908</span>
+                <a href="tel:+441274576908">TEL: 01274 576 908</a>
               </p>
             </div>
           </div>

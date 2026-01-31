@@ -15,7 +15,7 @@ const Footer = () => {
           setTimeout(() => setIsVisible(true), 100); // Reapply animation
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     const currentRef = footerRef.current; // Store ref safely
@@ -43,7 +43,7 @@ const Footer = () => {
           onClick={() =>
             window.open(
               "https://www.instagram.com/oakforestofyorkshire",
-              "_blank"
+              "_blank",
             )
           }
         />
@@ -53,7 +53,7 @@ const Footer = () => {
           onClick={() =>
             window.open(
               "https://www.tiktok.com/@oakforestofyorkshire",
-              "_blank"
+              "_blank",
             )
           }
         />

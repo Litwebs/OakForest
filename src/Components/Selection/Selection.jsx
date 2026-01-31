@@ -19,7 +19,7 @@ const Selection = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     const items = selectionRef.current.querySelectorAll(".selection-card");
@@ -50,7 +50,7 @@ const Selection = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="selection-card">
+      {/* <div className="selection-card">
         <div className="selection-overlay"></div>
         <img src={img2} alt="Bedrooms" className="selection-image" />
         <div className="selection-content">
@@ -64,7 +64,7 @@ const Selection = () => {
             SHOW MORE
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Card 3 */}
       <div className="selection-card">

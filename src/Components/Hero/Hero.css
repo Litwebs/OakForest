@@ -84,6 +84,24 @@
   font-weight: 300;
 }
 
+.hero-desc p {
+  margin: 0 0 12px;
+}
+
+.hero-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.hero-desc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 12px;
+}
+
+.hero-desc li {
+  margin: 6px 0;
+}
+
 /* Button */
 .hero-button {
   margin-top: 20px;

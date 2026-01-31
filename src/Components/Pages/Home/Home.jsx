@@ -25,20 +25,45 @@ const Home = () => {
       <ImgTop Img={KitImg} />
       <Hero
         title={"LUXURY TAILORED BEDROOM DESIGN"}
-        description="At Oak Forest of Yorkshire, we specialise in mid-to-upper-market. Handcrafted kitchens tailored to your lifestyle . 
-        Bespoke bedrooms designed for comfort and elegance .
-        Custom-built office furniture for both home and commercial spaces .
-        Lounge cabinetry and TV walls that redefine living spaces .
-        Our vision is simple: to offer timeless, high-quality interiors that enhance every space we touch . 
-        Whether you're looking for a contemporary kitchen, a classic bedroom, or a fully bespoke interior solution, 
-        our expertise ensures atruly personalised experience from design to installation .
-        "
+        description={
+          <>
+            <p>Bespoke Interiors, Made in Yorkshire. Installed Nationwide.</p>
+            <p>
+              At Oak Forest of Yorkshire, we design, manufacture, and install
+              beautifully crafted kitchens, fitted wardrobes, and media walls —
+              all made in our own Yorkshire-based factory.
+            </p>
+            <p>
+              Because everything is produced in-house, we have complete control
+              over quality, detail, and finish — giving you truly bespoke
+              furniture built to last.
+            </p>
+            <p>
+              From contemporary statement kitchens to elegant bedroom wardrobes
+              and show-stopping TV media walls, every project is tailored around
+              your space, your style, and your lifestyle.
+            </p>
+            <p>Why choose Oak Forest of Yorkshire?</p>
+            <ul>
+              <li>✔ Made in our Yorkshire factory – not outsourced</li>
+              <li>✔ We operate nationwide</li>
+              <li>✔ Design, manufacture &amp; installation service</li>
+              <li>✔ Over 100 colours and endless design combinations</li>
+              <li>✔ Premium materials and expert craftsmanship</li>
+              <li>✔ Up to 10-year warranty for peace of mind</li>
+            </ul>
+            <p>
+              No flat-pack. No compromises. Just high-quality, made-to-measure
+              interiors designed to transform your home.
+            </p>
+          </>
+        }
         Img={IMG}
       />
       <Banner
         title={"Giving our clients the very best service"}
         description={
-          "Our role here at Warren Day Design is to ensure our clients are given the very best service and are thrilled with their experience with us."
+          "Our role here at Oak Forest of Yorkshire is to ensure every client receives exceptional service and is delighted with their experience from design to installation."
         }
       />
       <HeroHome />

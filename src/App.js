@@ -25,7 +25,7 @@ function App() {
     try {
       const res = await axios.post(
         "https://admin.litwebs.co.uk/api/websites/status",
-        { url: "https://oakforestofyorkshire.com" }
+        { url: "https://oakforestofyorkshire.com" },
       );
       return res.data?.data?.status === "live";
     } catch (e) {
@@ -56,28 +56,29 @@ function App() {
           {isLive ? (
             <>
               <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/kitchens' element={<KitchenPage />} />
-                <Route path='/bedrooms' element={<Bedrooms />} />
-                <Route path='/wardrobes' element={<War />} />
-                <Route path='/contact' element={<ContactPage />} />
-                <Route path='/media-walls' element={<MWalls />} />
-                <Route path='*' element={<Navigate to='/' replace />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/kitchens" element={<KitchenPage />} />
+                {/* <Route path="/bedrooms" element={<Bedrooms />} /> */}
+                <Route path="/wardrobes" element={<War />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/media-walls" element={<MWalls />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
 
-              <div className='whats-app'>
+              <div className="whats-app">
                 <a
-                  href='https://api.whatsapp.com/send?phone=447739034893'
-                  target='_blank'
-                  rel='noreferrer'>
-                  <IoLogoWhatsapp size={70} className='whats-app-icon' />
+                  href="https://api.whatsapp.com/send?phone=447739034893"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <IoLogoWhatsapp size={70} className="whats-app-icon" />
                 </a>
               </div>
             </>
           ) : (
             <Routes>
               {/* show paused for ANY route */}
-              <Route path='*' element={<WebsitePaused />} />
+              <Route path="*" element={<WebsitePaused />} />
             </Routes>
           )}
         </>

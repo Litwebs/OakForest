@@ -76,13 +76,13 @@ const Header = () => {
         >
           Media Walls
         </Link>
-        <Link
+        {/* <Link
           to="/bedrooms"
           className="Moda"
           onClick={() => setMenuOpen(false)}
         >
           Bedrooms
-        </Link>
+        </Link> */}
         <Link to="/contact" className="Moda" onClick={() => setMenuOpen(false)}>
           Contact
         </Link>

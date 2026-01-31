@@ -76,6 +76,16 @@
   color: var(--Green);
 }
 
+.contact-phone a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-phone a:hover,
+.contact-phone a:focus-visible {
+  text-decoration: underline;
+}
+
 /* Right Side - Contact Form */
 .contact-form {
   width: 40%;

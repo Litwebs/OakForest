@@ -4,6 +4,26 @@ import "./Hero.css";
 const Hero = ({ title, description, Img, ShowBtn = true }) => {
   const heroRef = useRef(null);
 
+  const renderDescription = () => {
+    if (typeof description !== "string") return description;
+
+    return description
+      .split(/(?<=\.)\s+/) // Split by full stops followed by spaces
+      .reduce((acc, sentence, index) => {
+        if (index % 2 === 1) {
+          return [
+            ...acc,
+            sentence,
+            <span key={index}>
+              <br key={index} />
+              <br key={index + 1} />
+            </span>,
+          ]; // Add <br /> after every 2nd sentence
+        }
+        return [...acc, sentence];
+      }, []);
+  };
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -26,7 +46,7 @@ const Hero = ({ title, description, Img, ShowBtn = true }) => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     observer.observe(heroElement);
@@ -40,23 +60,7 @@ const Hero = ({ title, description, Img, ShowBtn = true }) => {
     <section className="hero" ref={heroRef}>
       <div className="hero-content">
         <h1 className="hero-title Moda">{title}</h1>
-        <p className="hero-desc lato">
-          {description
-            .split(/(?<=\.)\s+/) // Split by full stops followed by spaces
-            .reduce((acc, sentence, index) => {
-              if (index % 2 === 1) {
-                return [
-                  ...acc,
-                  sentence,
-                  <span key={index}>
-                    <br key={index} />
-                    <br key={index + 1} />
-                  </span>,
-                ]; // Add <br /> after every 2nd sentence
-              }
-              return [...acc, sentence];
-            }, [])}
-        </p>
+        <div className="hero-desc lato">{renderDescription()}</div>
         {ShowBtn && (
           <button
             className="hero-button"

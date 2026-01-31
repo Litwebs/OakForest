@@ -20,7 +20,7 @@ const HeroHome = () => {
           }
         });
       },
-      { threshold: 0.3 } // Trigger when 30% visible
+      { threshold: 0.3 }, // Trigger when 30% visible
     );
 
     if (heroElement) {
@@ -51,9 +51,10 @@ const HeroHome = () => {
         <div className="hero-item text">
           <h2 className="Moda">OUR FIRST-CLASS FITTING TEAM</h2>
           <p>
-            We offer a professional fitting team to ensure every installation is
-            carried out with precision and care. Our custom designs are tailored
-            to your space, style, and needs.
+            A Fully In-House Installation Experience Every detail is managed by
+            our own specialist teams — from fitting to plumbing, gas, and
+            electrics — ensuring flawless quality and complete control from
+            start to finish.
           </p>
         </div>
 
