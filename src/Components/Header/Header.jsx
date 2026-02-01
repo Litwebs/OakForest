@@ -73,6 +73,7 @@ const Header = () => {
           alt="Oakforest Logo"
           className={`logo ${!scrolled ? "br" : "br"}`}
         />
+        <div className="site-title Moda">Oak Forest of Yorkshire</div>
       </div>
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
@@ -121,13 +122,6 @@ const Header = () => {
           onClick={() => setMenuOpen(false)}
         >
           Media Walls
-        </Link>
-        <Link
-          to="/bedrooms"
-          className="Moda"
-          onClick={() => setMenuOpen(false)}
-        >
-          Bedrooms
         </Link>
         <Link to="/contact" className="Moda" onClick={() => setMenuOpen(false)}>
           Contact

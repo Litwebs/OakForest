@@ -59,3 +59,47 @@
 .Moda{
   font-family: "Playfair Display", serif;
 }
+
+/* Back To Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--Green);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 250ms ease, transform 250ms ease, background 200ms ease;
+}
+
+.back-to-top:hover {
+  background: #3a6156; /* slight darken */
+}
+
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+}

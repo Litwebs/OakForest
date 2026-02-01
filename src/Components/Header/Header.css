@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 0 20px;
 }
 
@@ -48,7 +49,21 @@
 
 .header.scrolled .logo {
   width: 80px;
+  display: none; /* Hide logo when scrolled, no animation */
 }
+
+/* Site Title Styling */
+.site-title {
+  margin-top: 6px;
+  font-weight: 600;
+  color: var(--Green);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Title remains visible on scroll without animation */
+.header.scrolled .site-title {}
 
 /* Navigation Styles */
 .nav {
@@ -104,7 +119,9 @@
 
   .header.scrolled .logo {
     width: 70px;
+    display: none; /* Hide logo on mobile when scrolled */
   }
+
 
   .menu-toggle {
     display: block;

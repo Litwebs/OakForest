@@ -9,6 +9,7 @@ import axios from "axios";
 
 import Home from "./Components/Pages/Home/Home";
 import ScrollToTop from "./Components/ScrollToTop";
+import BackToTop from "./Components/BackToTop";
 import KitchenPage from "./Components/Pages/Kitchens/KitchenPage";
 import Bedrooms from "./Components/Pages/Bedrooms/Bedrooms";
 import War from "./Components/Pages/War/War";
@@ -50,6 +51,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <BackToTop />
 
       {checking ? null : (
         <>
