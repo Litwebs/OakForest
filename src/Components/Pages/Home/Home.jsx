@@ -24,7 +24,7 @@ const Home = () => {
       <Header />
       <ImgTop Img={oakForestHomeImages[2]} />
       <Hero
-        title={"LUXURY TAILORED BEDROOM DESIGN"}
+        title={"LUXURY TAILORED DESIGN"}
         description={
           <>
             <p>Bespoke Interiors, Made in Yorkshire. Installed Nationwide.</p>
