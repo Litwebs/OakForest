@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import "./HeroHome.css";
-import mainImage from "../../../IMGS/IMG2.jpeg"; // Replace with actual image path
-import img1 from "../../../IMGS/IMG3.jpeg";
-import img2 from "../../../IMGS/IMG6.jpeg";
 
-const HeroHome = () => {
+const HeroHome = ({ images = [] }) => {
   const heroRef = useRef(null);
+
+  const mainImage = images[0];
+  const img1 = images[1] || images[0];
+  const img2 = images[2] || images[0];
 
   useEffect(() => {
     const heroElement = heroRef.current; // Store ref in a local variable
@@ -37,14 +38,22 @@ const HeroHome = () => {
     <section className="hero-home" ref={heroRef}>
       {/* Main Background Image */}
       <div className="hero-main">
-        <img src={mainImage} alt="Main Kitchen" className="main-image" />
+        {mainImage && (
+          <img src={mainImage} alt="Main Kitchen" className="main-image" />
+        )}
       </div>
 
       {/* Grid Content - 2x2 Layout */}
       <div className="hero-grid">
         {/* Image 1 */}
         <div className="hero-item">
-          <img src={img1} alt="Kitchen Design" className="grid-image dis-app" />
+          {img1 && (
+            <img
+              src={img1}
+              alt="Kitchen Design"
+              className="grid-image dis-app"
+            />
+          )}
         </div>
 
         {/* Text 1 */}
@@ -69,7 +78,9 @@ const HeroHome = () => {
 
         {/* Image 2 */}
         <div className="hero-item">
-          <img src={img2} alt="Kitchen Interior" className="grid-image" />
+          {img2 && (
+            <img src={img2} alt="Kitchen Interior" className="grid-image" />
+          )}
         </div>
       </div>
     </section>

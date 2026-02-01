@@ -59,12 +59,21 @@ const Header = () => {
           Wardrobes
         </Link>
       </nav>
-      <img
-        src={scrolled ? smallLogo : fullLogo}
-        alt="Oakforest Logo"
+      <div
+        className="logo-wrap"
         onClick={() => nav("/")}
-        className={`logo ${!scrolled ? "br" : "br"}`}
-      />
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") nav("/");
+        }}
+      >
+        <img
+          src={scrolled ? smallLogo : fullLogo}
+          alt="Oakforest Logo"
+          className={`logo ${!scrolled ? "br" : "br"}`}
+        />
+      </div>
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </button>

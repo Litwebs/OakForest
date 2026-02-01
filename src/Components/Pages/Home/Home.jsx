@@ -1,5 +1,4 @@
 import React from "react";
-import IMG from "../../../IMGS/IMG2.jpeg";
 import Header from "../../Header/Header";
 import ImgTop from "../../ImgTop/ImgTop";
 import Hero from "../../Hero/Hero";
@@ -8,8 +7,9 @@ import Banner from "../../Banner/Banner";
 import Selection from "../../Selection/Selection";
 import Rev from "../../Rev/Rev";
 import ContactForm from "../../ContactForm/ContactForm";
-import KitImg from "../../../IMGS/IMG1.jpeg";
 import Footer from "../../Footer/Footer";
+
+import { oakForestHomeImages } from "../../../IMGS/home/oakForestHomeImages";
 
 const Home = () => {
   const scrollToSection = (id) => {
@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <ImgTop Img={KitImg} />
+      <ImgTop Img={oakForestHomeImages[0]} />
       <Hero
         title={"LUXURY TAILORED BEDROOM DESIGN"}
         description={
@@ -58,7 +58,7 @@ const Home = () => {
             </p>
           </>
         }
-        Img={IMG}
+        Img={oakForestHomeImages[1] || oakForestHomeImages[0]}
       />
       <Banner
         title={"Giving our clients the very best service"}
@@ -66,7 +66,7 @@ const Home = () => {
           "Our role here at Oak Forest of Yorkshire is to ensure every client receives exceptional service and is delighted with their experience from design to installation."
         }
       />
-      <HeroHome />
+      <HeroHome images={oakForestHomeImages} />
       <Banner title={"We aim to give our clients the best service"} />
       <Selection />
       <Banner
