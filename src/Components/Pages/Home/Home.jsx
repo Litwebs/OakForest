@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <ImgTop Img={oakForestHomeImages[0]} />
+      <ImgTop Img={oakForestHomeImages[2]} />
       <Hero
         title={"LUXURY TAILORED BEDROOM DESIGN"}
         description={

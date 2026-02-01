@@ -58,12 +58,11 @@ const HeroHome = ({ images = [] }) => {
 
         {/* Text 1 */}
         <div className="hero-item text">
-          <h2 className="Moda">OUR FIRST-CLASS FITTING TEAM</h2>
+          <h2 className="Moda">A FULLY IN-HOUSE INSTALLATION EXPERIENCE </h2>
           <p>
-            A Fully In-House Installation Experience Every detail is managed by
-            our own specialist teams — from fitting to plumbing, gas, and
-            electrics — ensuring flawless quality and complete control from
-            start to finish.
+            Every detail is managed by our own specialist teams — from fitting
+            to plumbing, gas, and electrics — ensuring flawless quality and
+            complete control from start to finish.
           </p>
         </div>
 

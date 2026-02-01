@@ -41,15 +41,14 @@
 
 .logo {
   cursor: pointer;
-  width: 120px;
+  width: 150px;
   height: auto;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
 }
 
 .header.scrolled .logo {
-  width: 80px;
-  display: none; /* Hide logo when scrolled, no animation */
+  width: 150px; /* Keep logo visible and same size when scrolled */
 }
 
 /* Site Title Styling */
@@ -113,13 +112,12 @@
   }
 
   .logo {
-    width: 80px;
+    width: 100px;
     border-radius: 5px;
   }
 
   .header.scrolled .logo {
-    width: 70px;
-    display: none; /* Hide logo on mobile when scrolled */
+    width: 100px; /* Keep logo visible on mobile when scrolled */
   }
 
 

@@ -4,15 +4,15 @@ import "./Rev.css";
 
 const reviews = [
   {
-    text: "We are so pleased with our new kitchen. The work was carried out in a professional, tidy & friendly manner by Andy & Christian. Nothing was too much trouble. The open plan effect we were looking for works perfectly & the TV wall is fantastic. Thank you Warren Day Design.",
+    text: "Oak Forest of Yorkshire transformed our kitchen and media wall beautifully. Professional, tidy and friendly throughout, and nothing was too much trouble. The open-plan feel is perfect and the TV wall is fantastic. Thank you, Oak Forest of Yorkshire!",
     author: "MRS K PEDLEY",
   },
   {
-    text: "Absolutely delighted with our new kitchen. The service was excellent, and the craftsmanship outstanding. Highly recommended!",
+    text: "Absolutely delighted with our bespoke wardrobes from Oak Forest of Yorkshire. Excellent service, thoughtful design advice, and outstanding craftsmanship. Would recommend them without hesitation!",
     author: "MR J SMITH",
   },
   {
-    text: "A fantastic experience from start to finish! The team was professional, and the results exceeded our expectations. We love our new kitchen!",
+    text: "From design to installation, Oak Forest of Yorkshire were superb. Our kitchen now feels tailored to our home, and the finish is immaculate. A seamless, stress-free experience.",
     author: "MRS L WILSON",
   },
 ];
@@ -28,7 +28,7 @@ const Rev = () => {
       setIsFading(true); // Start fade-out
       setTimeout(() => {
         setCurrentIndex((prevIndex) =>
-          prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
+          prevIndex === reviews.length - 1 ? 0 : prevIndex + 1,
         );
         setIsFading(false); // Start fade-in
       }, 500);
@@ -60,7 +60,7 @@ const Rev = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (revElement) observer.observe(revElement);

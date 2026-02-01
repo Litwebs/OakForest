@@ -32,7 +32,7 @@ const KitchenPage = () => {
       <Banner
         title={"Our trusted trades team"}
         description={
-          "Over the years, we’ve built up a team of trusted trades people that we’re proud to have as part of the Warren Day family"
+          "Over the years, we’ve built a trusted team of skilled tradespeople we’re proud to work with at Oak Forest of Yorkshire."
         }
       />
       <ImgGrid images={oakForestKitchenImages} />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import fullLogo from "../../IMGS/cLogo.jpeg";
-import smallLogo from "../../IMGS/cLogo.jpeg";
+import fullLogo from "../../IMGS/oakforest-logo.jpg";
+import smallLogo from "../../IMGS/oakforest-logo.jpg";
 import { Link } from "react-router-dom"; // Corrected import
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
@@ -73,7 +73,6 @@ const Header = () => {
           alt="Oakforest Logo"
           className={`logo ${!scrolled ? "br" : "br"}`}
         />
-        <div className="site-title Moda">Oak Forest of Yorkshire</div>
       </div>
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
