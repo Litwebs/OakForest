@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.48c60a79.css",
-    "main.js": "/static/js/main.1f84b32d.js",
+    "main.css": "/static/css/main.592fafa4.css",
+    "main.js": "/static/js/main.839a63c0.js",
     "static/media/IMG2.jpg": "/static/media/IMG2.0f3b165f5a4a9b8ed47b.jpg",
     "static/media/IMG10.jpg": "/static/media/IMG10.4dac7dc5983d56ca346c.jpg",
     "static/media/IMG1.jpg": "/static/media/IMG1.c378f3b427e144395691.jpg",
@@ -127,15 +127,16 @@
     "static/media/IMG1.jpeg": "/static/media/IMG1.2e1f466ca9b4b42b0a22.jpeg",
     "static/media/wardrobe-017.jpeg": "/static/media/wardrobe-017.d50b10e1657df8f979b7.jpeg",
     "static/media/kitchen-019.jpeg": "/static/media/kitchen-019.6e00f9bea9f2249f68e2.jpeg",
+    "static/media/oakforest-logo.jpg": "/static/media/oakforest-logo.4d24b80061c6dd947133.jpg",
     "static/media/kitchen-041.jpeg": "/static/media/kitchen-041.4fc89182bf05fe0a2730.jpeg",
     "static/media/kitchen-028.jpeg": "/static/media/kitchen-028.4d8a45d5809eb124769e.jpeg",
     "static/media/kitchen-025.jpeg": "/static/media/kitchen-025.8c68c4c91c5d183cb67a.jpeg",
     "index.html": "/index.html",
-    "main.48c60a79.css.map": "/static/css/main.48c60a79.css.map",
-    "main.1f84b32d.js.map": "/static/js/main.1f84b32d.js.map"
+    "main.592fafa4.css.map": "/static/css/main.592fafa4.css.map",
+    "main.839a63c0.js.map": "/static/js/main.839a63c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.48c60a79.css",
-    "static/js/main.1f84b32d.js"
+    "static/css/main.592fafa4.css",
+    "static/js/main.839a63c0.js"
   ]
 }
