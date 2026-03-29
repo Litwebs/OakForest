@@ -57,7 +57,7 @@ const ContactForm = () => {
         {/* Right Side - Contact Form */}
         <div className="contact-form">
           <form
-            action="https://formsubmit.co/oakforestofyorkshire@gmail.com"
+            action="https://formsubmit.co/Oakforestinteriors@yahoo.com"
             method="POST"
           >
             <div className="form-group">
