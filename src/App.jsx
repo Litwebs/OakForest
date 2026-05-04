@@ -15,7 +15,7 @@ import Bedrooms from "./Components/Pages/Bedrooms/Bedrooms";
 import War from "./Components/Pages/War/War";
 import ContactPage from "./Components/Pages/Contact/ContactPage";
 import MWalls from "./Components/Pages/MWalls/MWalls";
-import WebsitePaused from "./Components/Error"; // your paused page
+import NoService from "./Components/NoService"; // your paused page
 import { IoLogoWhatsapp } from "react-icons/io";
 
 function App() {
@@ -35,6 +35,12 @@ function App() {
   };
 
   useEffect(() => {
+    if (process.env.NODE_ENV !== "production") {
+      setIsLive(false);
+      setChecking(false);
+      return;
+    }
+
     let mounted = true;
     (async () => {
       const live = await checkStatus();
@@ -55,12 +61,11 @@ function App() {
 
       {checking ? null : (
         <>
-          {isLive ? (
+          {!isLive ? (
             <>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/kitchens" element={<KitchenPage />} />
-                {/* <Route path="/bedrooms" element={<Bedrooms />} /> */}
                 <Route path="/wardrobes" element={<War />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/media-walls" element={<MWalls />} />
@@ -80,7 +85,7 @@ function App() {
           ) : (
             <Routes>
               {/* show paused for ANY route */}
-              <Route path="*" element={<WebsitePaused />} />
+              <Route path="*" element={<NoService />} />
             </Routes>
           )}
         </>
